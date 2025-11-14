@@ -29,8 +29,7 @@ export function Header() {
           <div className="flex items-center space-x-4">
             {/* Language Switcher */}
             <button className="hidden md:flex items-center text-neutral-600 hover:text-primary-500 transition-colors">
-              <Globe className="h-4 w-4 mr-1" />
-              English
+              <Globe className="h-4 w-4" />
             </button>
 
             {/* Phone Number */}
