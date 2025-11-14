@@ -87,7 +87,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight px-4"
         >
           Digital Excellence
           <br />
@@ -101,7 +101,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-4"
         >
           Transform your business with cutting-edge web solutions, 
           stunning mobile apps, and data-driven digital marketing strategies.
@@ -112,7 +112,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 px-4"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -121,7 +121,7 @@ export function Hero() {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="px-8 py-4 text-lg font-semibold bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
             >
               Start Your Project
             </Button>
@@ -134,7 +134,7 @@ export function Hero() {
               onClick={scrollToServices}
               size="lg"
               variant="outline"
-              className="px-8 py-4 text-lg font-semibold border-2 border-blue-400 text-blue-300 rounded-xl hover:bg-blue-400 hover:text-white transition-all duration-300"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-blue-400 text-blue-300 rounded-xl hover:bg-blue-400 hover:text-white transition-all duration-300 w-full sm:w-auto"
             >
               View Our Work
             </Button>
@@ -146,19 +146,19 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4"
         >
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
-            <div className="text-gray-400">Projects Delivered</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+            <div className="text-sm sm:text-base text-gray-400">Projects Delivered</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">98%</div>
-            <div className="text-gray-400">Client Satisfaction</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">98%</div>
+            <div className="text-sm sm:text-base text-gray-400">Client Satisfaction</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-400">Support Available</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
+            <div className="text-sm sm:text-base text-gray-400">Support Available</div>
           </div>
         </motion.div>
       </div>
