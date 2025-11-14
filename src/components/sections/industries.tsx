@@ -6,17 +6,17 @@ import { ChevronLeft, ChevronRight, Stethoscope, Cpu, Car } from "lucide-react"
 const industries = [
   {
     name: "Medical",
-    description: "Specialized healthcare marketing solutions that build trust and drive patient engagement through HIPAA-compliant digital platforms.",
+    description: "Specialized healthcare marketing solutions that build trust and drive patient engagement",
     icon: Stethoscope
   },
   {
     name: "Electronics",
-    description: "Technology-focused marketing strategies that showcase innovation and drive sales through cutting-edge digital campaigns.",
+    description: "Technology-focused marketing strategies that showcase innovation and drive sales",
     icon: Cpu
   },
   {
     name: "Automotive",
-    description: "Automotive industry marketing that accelerates your brand's journey to market success with performance-driven campaigns.",
+    description: "Automotive industry marketing that accelerates your brand's journey to market success",
     icon: Car
   }
 ]
@@ -35,7 +35,7 @@ export function Industries() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Adjust Your Tone As Needed With One of the Best
-            <span className="text-gold-400"> Digital Solutions Agencies</span>
+            <span className="text-gold-400"> Digital Marketing Agencies</span> in Dubai
           </h2>
         </motion.div>
 

@@ -35,7 +35,7 @@ export function About() {
             className="relative"
           >
             {/* Main Sculpture Visual */}
-            <div className="bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-2xl p-8 shadow-xl">
+            <div className="bg-linear-to-br from-neutral-100 to-neutral-200 rounded-2xl p-8 shadow-xl">
               <div className="text-center">
                 <div className="text-6xl mb-4">🎭</div>
                 <div className="absolute -top-4 -right-4 text-3xl">🎵</div>
@@ -81,13 +81,13 @@ export function About() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full shadow-xl">
+          <div className="inline-flex items-center justify-center w-32 h-32 bg-linear-to-r from-primary-400 to-primary-600 rounded-full shadow-xl">
             <span className="text-4xl">🤝</span>
           </div>
 
           {/* Digital Text with Gradient */}
           <div className="mt-6">
-            <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
               DIGITAL
             </span>
           </div>
