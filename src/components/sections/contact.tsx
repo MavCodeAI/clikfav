@@ -86,15 +86,15 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-neutral-50 rounded-xl p-8"
+            className="bg-neutral-50 rounded-xl p-6 sm:p-8 lg:p-12"
           >
             <h3 className="text-2xl font-semibold text-neutral-900 mb-6">
               Send us a message
             </h3>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
               {/* Name Fields */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4">
                 <div>
                   <Input
                     {...register("fullName")}
@@ -123,7 +123,7 @@ export function Contact() {
               </div>
 
               {/* Contact Fields */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4">
                 <div>
                   <Input
                     {...register("email")}
@@ -174,7 +174,7 @@ export function Contact() {
               </div>
 
               {/* Budget and Timeline */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4">
                 <div>
                   <Select {...register("budget")} className="w-full">
                     <option value="">Budget Range *</option>
