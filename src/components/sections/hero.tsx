@@ -15,7 +15,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden">
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
