@@ -15,8 +15,7 @@ import {
   Send,
   Building,
   User,
-  MessageSquare,
-  Calendar
+  MessageSquare
 } from "lucide-react"
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
@@ -74,7 +73,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contactform" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-neutral-50 to-white">
+    <section id="contactform" className="py-16 sm:py-20 lg:py-24 bg-linear-to-br from-neutral-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -273,7 +272,7 @@ export function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full h-14 text-lg font-semibold bg-linear-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                   size="lg"
                 >
                   {isSubmitting ? (
@@ -296,7 +295,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex items-center text-green-600 bg-green-50 p-4 rounded-lg border border-green-200"
                   >
-                    <CheckCircle className="w-5 h-5 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium">Message sent successfully!</p>
                       <p className="text-sm">We&apos;ll get back to you within 24 hours.</p>
@@ -310,7 +309,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex items-center text-red-600 bg-red-50 p-4 rounded-lg border border-red-200"
                   >
-                    <AlertCircle className="w-5 h-5 mr-3 flex-shrink-0" />
+                    <AlertCircle className="w-5 h-5 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium">Something went wrong</p>
                       <p className="text-sm">Please try again or contact us directly.</p>
@@ -340,7 +339,7 @@ export function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -351,7 +350,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -362,7 +361,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -373,7 +372,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -386,7 +385,7 @@ export function Contact() {
             </div>
 
             {/* Stats Card */}
-            <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-primary-500 to-primary-600 rounded-2xl p-6 text-white">
               <h4 className="text-lg font-semibold mb-4">Why Choose ClikXo?</h4>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
