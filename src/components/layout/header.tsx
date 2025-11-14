@@ -30,7 +30,7 @@ export function Header() {
             {/* Language Switcher */}
             <button className="hidden md:flex items-center text-neutral-600 hover:text-primary-500 transition-colors">
               <Globe className="h-4 w-4 mr-1" />
-              العربية
+              English
             </button>
 
             {/* Phone Number */}
