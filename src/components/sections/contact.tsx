@@ -46,7 +46,7 @@ export function Contact() {
       } else {
         setSubmitStatus('error')
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -67,7 +67,7 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto px-4">
-            Ready to transform your business? Let's discuss your project and create something amazing together.
+            Ready to transform your business? Let&apos;s discuss your project and create something amazing together.
           </p>
         </motion.div>
 
@@ -128,7 +128,7 @@ export function Contact() {
                   className="flex items-center text-green-600 bg-green-50 p-4 rounded-lg"
                 >
                   <CheckCircle className="w-5 h-5 mr-2" />
-                  Message sent successfully! We'll get back to you soon.
+                  Message sent successfully! We&apos;ll get back to you soon.
                 </motion.div>
               )}
 
@@ -160,7 +160,7 @@ export function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -170,7 +170,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -180,7 +180,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -193,7 +193,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
