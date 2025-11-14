@@ -73,7 +73,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contactform" className="py-16 sm:py-20 lg:py-24 bg-linear-to-br from-neutral-50 to-white">
+    <section id="contactform" className="py-16 sm:py-20 lg:py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -100,7 +100,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10 border border-neutral-200">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-neutral-200">
               <div className="flex items-center mb-6">
                 <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center mr-3">
                   <Send className="w-5 h-5 text-white" />
@@ -329,7 +329,7 @@ export function Contact() {
             className="space-y-6"
           >
             {/* Contact Cards */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 border border-neutral-200">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-neutral-200">
               <h3 className="text-xl font-semibold text-neutral-900 mb-6 flex items-center">
                 <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center mr-3">
                   <Phone className="w-4 h-4 text-white" />
@@ -385,7 +385,7 @@ export function Contact() {
             </div>
 
             {/* Stats Card */}
-            <div className="bg-linear-to-br from-primary-500 to-primary-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-r from-primary-500 to-primary-600 rounded-xl p-6 text-white">
               <h4 className="text-lg font-semibold mb-4">Why Choose ClikXo?</h4>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">

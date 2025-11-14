@@ -69,7 +69,7 @@ export function Services() {
             Tune Up Your Business Performance With Our Personalized Digital Solutions
           </h2>
           <p className="text-base sm:text-lg text-neutral-600 max-w-2xl sm:max-w-3xl mx-auto px-4">
-            At the heart of our tech company is a steady tempo: propelling your business to success while minimizing your risk of failure. With our wide range of services, you&apos;ll be one step closer to hitting all the right notes.
+            Data-Driven + Result-Oriented solutions that propel your business to success while minimizing risk of failure.
           </p>
         </motion.div>
 
@@ -91,7 +91,7 @@ export function Services() {
                 stiffness: 100
               }}
               viewport={{ once: true }}
-              className="group relative bg-linear-to-br from-white to-primary-50 border-2 border-primary-200 rounded-2xl p-6 sm:p-8 hover:border-primary-500 transition-all duration-500 shadow-lg hover:shadow-2xl"
+              className="group relative bg-white border border-neutral-200 rounded-xl p-6 sm:p-8 hover:border-primary-300 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex flex-col items-center text-center">
                 <motion.div 

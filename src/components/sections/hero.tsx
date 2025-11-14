@@ -15,57 +15,19 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        {/* Gradient Orbs */}
-        <motion.div
-          className="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"
-          animate={{
-            scale: [1, 1.5, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-      </div>
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center bg-white">
+      {/* Clean Professional Background */}
+      <div className="absolute inset-0 bg-linear-to-br from-neutral-50 via-white to-neutral-100"></div>
 
-      {/* Grid Pattern */}
-      <div 
-        className="absolute inset-0 opacity-5"
+      {/* Subtle Grid Pattern */}
+      <div
+        className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+            linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px)
           `,
-          backgroundSize: '50px 50px',
+          backgroundSize: '60px 60px',
         }}
       />
 
@@ -76,10 +38,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center px-4 py-2 mb-8 text-sm font-medium text-blue-300 bg-blue-900/30 rounded-full border border-blue-700/30 backdrop-blur-sm"
+          className="inline-flex items-center px-6 py-2 mb-8 text-sm font-medium text-primary-700 bg-primary-100 rounded-full border border-primary-200"
         >
-          <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-          Available for Projects
+          <span className="w-2 h-2 bg-primary-500 rounded-full mr-2 animate-pulse"></span>
+          Performance-Driven Tech Solutions
         </motion.div>
 
         {/* Main Heading */}
@@ -87,12 +49,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight px-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-neutral-900 mb-4 sm:mb-6 leading-tight px-4"
         >
-          Digital Excellence
+          ClikXo is a Performance
           <br />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">
-            Meets Innovation
+          <span className="text-primary-600">
+            Digital Solutions Agency
           </span>
         </motion.h1>
 
@@ -101,10 +63,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-4"
+          className="text-lg sm:text-xl md:text-2xl text-neutral-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4"
         >
-          Transform your business with cutting-edge web solutions, 
-          stunning mobile apps, and data-driven digital marketing strategies.
+          Trusted by leading brands who value growth, integrity, and genuine partnership.
+          Transform your business with cutting-edge technology solutions.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -121,9 +83,9 @@ export function Hero() {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto"
             >
-              Start Your Project
+              Request a Proposal
             </Button>
           </motion.div>
           <motion.div
@@ -134,9 +96,9 @@ export function Hero() {
               onClick={scrollToServices}
               size="lg"
               variant="outline"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-blue-400 text-blue-300 rounded-xl hover:bg-blue-400 hover:text-white transition-all duration-300 w-full sm:w-auto"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white rounded-lg transition-all duration-300 w-full sm:w-auto"
             >
-              View Our Work
+              View Our Services
             </Button>
           </motion.div>
         </motion.div>
@@ -149,16 +111,16 @@ export function Hero() {
           className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4"
         >
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
-            <div className="text-sm sm:text-base text-gray-400">Projects Delivered</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-600 mb-2">500+</div>
+            <div className="text-sm sm:text-base text-neutral-600">Projects Completed</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">98%</div>
-            <div className="text-sm sm:text-base text-gray-400">Client Satisfaction</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-600 mb-2">98%</div>
+            <div className="text-sm sm:text-base text-neutral-600">Client Satisfaction</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
-            <div className="text-sm sm:text-base text-gray-400">Support Available</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-600 mb-2">5+</div>
+            <div className="text-sm sm:text-base text-neutral-600">Years Experience</div>
           </div>
         </motion.div>
       </div>
