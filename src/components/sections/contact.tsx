@@ -8,10 +8,18 @@ import { motion } from "framer-motion"
 import { Mail, Phone, MapPin, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
+import { Textarea } from "../ui/textarea"
+import { Select } from "../ui/select"
 
 const contactSchema = z.object({
+  fullName: z.string().min(2, "Full name is required"),
   companyName: z.string().min(2, "Company name is required"),
   email: z.string().email("Invalid email address"),
+  phone: z.string().min(10, "Phone number is required"),
+  service: z.string().min(1, "Please select a service"),
+  budget: z.string().min(1, "Please select a budget range"),
+  timeline: z.string().min(1, "Please select a timeline"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
 })
 
 type ContactFormData = z.infer<typeof contactSchema>
@@ -85,29 +93,132 @@ export function Contact() {
             </h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              {/* Name Fields */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <Input
+                    {...register("fullName")}
+                    placeholder="Full Name *"
+                    className="w-full"
+                  />
+                  {errors.fullName && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.fullName.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <Input
+                    {...register("companyName")}
+                    placeholder="Company Name *"
+                    className="w-full"
+                  />
+                  {errors.companyName && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.companyName.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Contact Fields */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <Input
+                    {...register("email")}
+                    type="email"
+                    placeholder="Email Address *"
+                    className="w-full"
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.email.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <Input
+                    {...register("phone")}
+                    type="tel"
+                    placeholder="Phone Number *"
+                    className="w-full"
+                  />
+                  {errors.phone && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.phone.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Service Selection */}
               <div>
-                <Input
-                  {...register("companyName")}
-                  placeholder="Company Name"
-                  className="w-full"
-                />
-                {errors.companyName && (
+                <Select {...register("service")} className="w-full">
+                  <option value="">Select a Service *</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="app-development">App Development</option>
+                  <option value="graphics-design">Graphics Design</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="seo">SEO Services</option>
+                  <option value="branding">Branding & Identity</option>
+                  <option value="consulting">IT Consulting</option>
+                  <option value="other">Other Services</option>
+                </Select>
+                {errors.service && (
                   <p className="text-red-500 text-sm mt-1">
-                    {errors.companyName.message}
+                    {errors.service.message}
                   </p>
                 )}
               </div>
 
+              {/* Budget and Timeline */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <Select {...register("budget")} className="w-full">
+                    <option value="">Budget Range *</option>
+                    <option value="5k-10k">$5,000 - $10,000</option>
+                    <option value="10k-25k">$10,000 - $25,000</option>
+                    <option value="25k-50k">$25,000 - $50,000</option>
+                    <option value="50k-100k">$50,000 - $100,000</option>
+                    <option value="100k+">$100,000+</option>
+                  </Select>
+                  {errors.budget && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.budget.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <Select {...register("timeline")} className="w-full">
+                    <option value="">Project Timeline *</option>
+                    <option value="asap">ASAP (1-2 weeks)</option>
+                    <option value="1-month">1 Month</option>
+                    <option value="2-3-months">2-3 Months</option>
+                    <option value="3-6-months">3-6 Months</option>
+                    <option value="6-months+">6+ Months</option>
+                  </Select>
+                  {errors.timeline && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.timeline.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Message */}
               <div>
-                <Input
-                  {...register("email")}
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full"
+                <Textarea
+                  {...register("message")}
+                  placeholder="Tell us about your project requirements, goals, and any specific details you'd like to share... *"
+                  rows={5}
+                  className="w-full resize-none"
                 />
-                {errors.email && (
+                {errors.message && (
                   <p className="text-red-500 text-sm mt-1">
-                    {errors.email.message}
+                    {errors.message.message}
                   </p>
                 )}
               </div>

@@ -5,11 +5,20 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
 
     // Validate the request body
-    const { companyName, email } = body
+    const { 
+      fullName, 
+      companyName, 
+      email, 
+      phone, 
+      service, 
+      budget, 
+      timeline, 
+      message 
+    } = body
 
-    if (!companyName || !email) {
+    if (!fullName || !companyName || !email || !phone || !service || !budget || !timeline || !message) {
       return NextResponse.json(
-        { error: 'Company name and email are required' },
+        { error: 'All fields are required' },
         { status: 400 }
       )
     }
@@ -21,7 +30,16 @@ export async function POST(request: NextRequest) {
     // 4. Send a confirmation email
 
     // For now, we'll just simulate success
-    console.log('Contact form submission:', { companyName, email })
+    console.log('Contact form submission:', { 
+      fullName, 
+      companyName, 
+      email, 
+      phone, 
+      service, 
+      budget, 
+      timeline, 
+      message 
+    })
 
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 1000))
