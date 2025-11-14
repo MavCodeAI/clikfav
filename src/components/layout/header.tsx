@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Phone, Globe, Menu } from "lucide-react"
+import { Phone, Menu } from "lucide-react"
 import { Logo } from "../shared/logo"
 import { Navigation } from "../shared/navigation"
 import { MobileMenu } from "./mobile-menu"
@@ -27,11 +27,6 @@ export function Header() {
 
           {/* Right side actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Switcher */}
-            <button className="hidden md:flex items-center text-neutral-600 hover:text-primary-500 transition-colors">
-              <Globe className="h-4 w-4" />
-            </button>
-
             {/* Phone Number */}
             <a
               href="tel:+97144318653"
