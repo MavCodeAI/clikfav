@@ -56,7 +56,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-white">
+    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-dark-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,11 +65,11 @@ export function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 mb-4 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-4 uppercase tracking-wide">
             Tune Up Your Business Performance With Our Personalized Digital Solutions
           </h2>
-          <p className="text-base sm:text-lg text-neutral-600 max-w-2xl sm:max-w-3xl mx-auto px-4">
-            Data-Driven + Result-Oriented solutions that propel your business to success while minimizing risk of failure.
+          <p className="text-base sm:text-lg text-neutral-300 max-w-2xl sm:max-w-3xl mx-auto px-4">
+            Data‑Driven + Result‑Oriented solutions that propel your business to success while minimizing risk of failure.
           </p>
         </motion.div>
 
@@ -91,27 +91,18 @@ export function Services() {
                 stiffness: 100
               }}
               viewport={{ once: true }}
-              className="group relative bg-white border border-neutral-200 rounded-xl p-6 sm:p-8 hover:border-primary-300 hover:shadow-lg transition-all duration-300"
+              className="group relative bg-dark-card border border-neutral-700 rounded-lg p-6 hover:border-gold-400 hover:shadow-lg hover:shadow-gold-400/20 transition-all duration-300 aspect-square flex flex-col justify-center items-center text-center"
             >
-              <div className="flex flex-col items-center text-center">
-                <motion.div 
-                  initial={{ rotate: 0 }}
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                  className="w-16 h-16 sm:w-20 sm:h-20 bg-linear-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:from-primary-600 group-hover:to-primary-800 transition-all duration-500 shadow-xl"
-                >
-                  <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-                </motion.div>
-                
-                <div className="text-sm sm:text-base font-black text-primary-600 mb-2 sm:mb-3 tracking-wider">
+              <div className="flex flex-col items-center">
+                <div className="text-2xl sm:text-3xl font-black text-gold-400 mb-3 uppercase tracking-wider">
                   {service.code}
                 </div>
-                
-                <h3 className="text-lg sm:text-xl font-black text-neutral-900 mb-3 sm:mb-4 leading-tight">
+
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-tight">
                   {service.name}
                 </h3>
-                
-                <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-medium">
+
+                <p className="text-sm text-neutral-400 leading-relaxed">
                   {service.description}
                 </p>
               </div>

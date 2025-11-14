@@ -25,7 +25,24 @@
   --color-primary-800: #075985;
   --color-primary-900: #0c4a6e;
 
-  /* Professional Gray Scale */
+  /* Dark Navy Theme */
+  --color-dark-navy: #050816;
+  --color-dark-charcoal: #0b1120;
+  --color-dark-slate: #111827;
+  --color-dark-card: #020617;
+
+  /* Gold/Yellow Accents */
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #facc15;
+  --color-gold-600: #d97706;
+  --color-gold-700: #b45309;
+  --color-gold-800: #92400e;
+  --color-gold-900: #78350f;
+
+  /* Neutral Text Colors */
   --color-neutral-50: #f8fafc;
   --color-neutral-100: #f1f5f9;
   --color-neutral-200: #e2e8f0;
@@ -48,8 +65,9 @@
   /* Background Colors */
   --color-background-page: #ffffff;
   --color-background-surface: #ffffff;
-  --color-background-dark: #0f172a;
+  --color-background-dark: #050816;
   --color-background-card: #ffffff;
+  --color-background-section: #f8fafc;
 }
 
 @media (prefers-color-scheme: dark) {
