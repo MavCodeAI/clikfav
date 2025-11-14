@@ -64,10 +64,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight px-4 uppercase tracking-wide"
         >
-          ClikXo is a Performance
+          DIGITAL ORKS IS A PERFORMANCE
           <br />
           <span className="text-gold-400">
-            Digital Solutions Agency
+            DIGITAL MARKETING AGENCY IN
+            <br />
+            DUBAI
           </span>
         </motion.h1>
 
@@ -78,8 +80,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg sm:text-xl md:text-2xl text-neutral-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4"
         >
-          Digital marketing is evolving—are you staying ahead?
-          Transform your business with cutting-edge technology solutions.
+          Digital marketing is evolving — are you staying ahead?
         </motion.p>
 
         {/* CTA Buttons */}
@@ -87,7 +88,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 px-4"
+          className="flex justify-center mb-12 sm:mb-16 px-4"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -96,22 +97,9 @@ export function Hero() {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-gold-500 hover:bg-gold-600 text-dark-navy rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto border border-gold-400"
+              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-gold-500 hover:bg-gold-600 text-dark-navy rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Request a Proposal
-            </Button>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Button
-              onClick={scrollToServices}
-              size="lg"
-              variant="outline"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-dark-navy rounded-lg transition-all duration-300 w-full sm:w-auto"
-            >
-              View Our Services
             </Button>
           </motion.div>
         </motion.div>

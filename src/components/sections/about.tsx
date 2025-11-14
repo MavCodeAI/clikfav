@@ -1,26 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Lightbulb, Award, Heart } from "lucide-react"
 import { Button } from "../ui/button"
-
-const values = [
-  {
-    icon: Lightbulb,
-    title: "Innovation-Driven",
-    description: "Cutting-edge solutions using latest technologies for optimal performance and user experience."
-  },
-  {
-    icon: Award,
-    title: "Quality-Focused",
-    description: "Delivering exceptional results with attention to detail and rigorous testing standards."
-  },
-  {
-    icon: Heart,
-    title: "Client-Centric",
-    description: "Custom solutions tailored to your specific business needs and growth objectives."
-  }
-]
 
 export function About() {
   const scrollToContact = () => {
@@ -29,73 +10,99 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-20 bg-neutral-50">
+    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
+        {/* Main Headline */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+            Take a Peek Behind the Curtains of Our Digital Marketing Company in Dubai
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Side - Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="relative"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-              About ClikXo
-            </h2>
-            <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-              We are a premium tech company specializing in comprehensive digital solutions.
-              From web and mobile app development to stunning graphics design and strategic
-              digital marketing, we help businesses thrive in the digital landscape.
-            </p>
-
-            <div className="space-y-6 mb-8">
-              {values.map((value, index) => (
-                <motion.div
-                  key={value.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-start space-x-4"
-                >
-                  <div className="shrink-0 w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-                    <value.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                      {value.title}
-                    </h3>
-                    <p className="text-neutral-600">
-                      {value.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
+            {/* Main Sculpture Visual */}
+            <div className="bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-2xl p-8 shadow-xl">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🎭</div>
+                <div className="absolute -top-4 -right-4 text-3xl">🎵</div>
+                <div className="absolute -bottom-4 -left-4 text-3xl">🎼</div>
+                <div className="absolute top-1/2 -right-6 text-2xl">♪</div>
+              </div>
             </div>
 
-            <Button onClick={scrollToContact} size="lg">
-              Get In Touch
-            </Button>
+            {/* Golden Musical Notes */}
+            <div className="absolute -top-8 -right-8 w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-2xl">🎵</span>
+            </div>
           </motion.div>
 
-          {/* Visual Element */}
+          {/* Right Side - Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative"
+            className="space-y-6"
           >
-            <div className="aspect-square bg-linear-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-primary-500 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <Lightbulb className="w-12 h-12 text-white" />
-                </div>
-                <p className="text-primary-700 font-semibold">Innovation at Heart</p>
-              </div>
+            <p className="text-lg text-neutral-700 leading-relaxed">
+              We are a leading digital marketing agency in Dubai with a unique approach that combines data analytics with creative storytelling. Our expertise in digital marketing campaigns helps businesses achieve digital transformation through certified Google Ads agency services.
+            </p>
+
+            <div className="pt-4">
+              <Button
+                onClick={scrollToContact}
+                className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3"
+              >
+                Get In Touch
+              </Button>
             </div>
           </motion.div>
         </div>
+
+        {/* Bottom Visual Element */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <div className="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full shadow-xl">
+            <span className="text-4xl">🤝</span>
+          </div>
+
+          {/* Digital Text with Gradient */}
+          <div className="mt-6">
+            <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              DIGITAL
+            </span>
+          </div>
+        </motion.div>
+
+        {/* Golden Saxophone */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="fixed bottom-8 right-8 w-24 h-24 bg-gold-400 rounded-full flex items-center justify-center shadow-2xl z-10"
+        >
+          <span className="text-3xl">🎷</span>
+        </motion.div>
       </div>
     </section>
   )

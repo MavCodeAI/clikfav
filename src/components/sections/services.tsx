@@ -5,52 +5,40 @@ import { Globe, Smartphone, Palette, TrendingUp, Code, Zap, BarChart, Target } f
 
 const services = [
   {
-    code: 'WEB',
-    name: 'WEB DEVELOPMENT',
-    description: 'We build custom responsive websites using modern technologies like React, Next.js, and TypeScript. When ranking high on search engines and providing optimal user experience, you get more organic traffic to your website which will lead to increased revenue and conversions.',
-    icon: Globe
-  },
-  {
-    code: 'APP',
-    name: 'APP DEVELOPMENT',
-    description: 'Native and cross-platform mobile applications for iOS and Android using React Native and Flutter. Our team makes use of effective mobile app development helping all our clients to reach a wider audience and build a solid mobile presence, thereby boosting your app downloads and ultimately sales.',
-    icon: Smartphone
-  },
-  {
-    code: 'GRAPHICS',
-    name: 'GRAPHICS DESIGN',
-    description: 'Professional logo design, branding materials, UI/UX design, and visual content creation. Benefit from the digital space and convert more visitors into customers with stunning visual designs that get a larger ROI with enhanced creative solutions that our team excels at every step of the way!',
-    icon: Palette
-  },
-  {
-    code: 'MARKETING',
-    name: 'DIGITAL MARKETING',
-    description: 'Strategic digital marketing campaigns including SEO, social media marketing, content creation, and paid advertising. We harness the power of digital marketing for business growth and digital transformation when combined with the best practices in SEM, matching people seeking a solution or service with you.',
-    icon: TrendingUp
-  },
-  {
     code: 'SEO',
-    name: 'SEO OPTIMIZATION',
-    description: 'We steer more traffic to your website by using SEO strategies in content creation. When ranking high on search engines you get more organic traffic to your page will lead to increased revenue and conversions.',
+    name: 'Search Engine Optimization',
+    description: 'Optimize your website\'s visibility and rank higher in search results',
     icon: Target
   },
   {
     code: 'SMA',
-    name: 'SOCIAL MEDIA ADVERTISING',
-    description: 'Our team makes use of effective social media marketing helping all our clients to reach a wider audience and build a solid social media presence. Thereby, boosting your website traffic leads and ultimately sales.',
+    name: 'Social Media Advertising',
+    description: 'Reach your target audience across all social platforms with strategic ad campaigns',
     icon: Zap
   },
   {
     code: 'CRO',
-    name: 'CONVERSION RATE OPTIMIZATION',
-    description: 'Benefit from the digital space and convert more visitors into customers and get a larger ROI with multivariate testing and enhanced optimization management that our team excels at every step of the way!',
+    name: 'Conversion Rate Optimization',
+    description: 'Transform website visitors into paying customers with proven optimization techniques',
     icon: BarChart
   },
   {
     code: 'PPC',
-    name: 'PAY PER CLICK ADVERTISING',
-    description: 'We harness the power of PPC for business growth and digital transformation when combined with the best practices in SEM. PPC digital marketing campaigns match people seeking a solution or service with you.',
+    name: 'Pay Per Click Advertising',
+    description: 'Drive immediate traffic and leads with targeted pay-per-click campaigns',
     icon: Code
+  },
+  {
+    code: 'DDA',
+    name: 'Digital Display Advertising',
+    description: 'Create brand awareness with eye-catching display advertisements across the web',
+    icon: TrendingUp
+  },
+  {
+    code: 'WAM',
+    name: 'Web Analytics Management',
+    description: 'Track, measure, and optimize your digital marketing performance with advanced analytics',
+    icon: Globe
   }
 ]
 
@@ -66,10 +54,10 @@ export function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-4 uppercase tracking-wide">
-            Tune Up Your Business Performance With Our Personalized Digital Solutions
+            Tune Up Your Business Performance With Our Personalized Digital Marketing <span className="text-gold-400">Services</span> in Dubai
           </h2>
           <p className="text-base sm:text-lg text-neutral-300 max-w-2xl sm:max-w-3xl mx-auto px-4">
-            Data‑Driven + Result‑Oriented solutions that propel your business to success while minimizing risk of failure.
+            We provide comprehensive digital marketing solutions in Dubai tailored to your business needs.
           </p>
         </motion.div>
 
